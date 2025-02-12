@@ -1,0 +1,122 @@
+h1 {
+    margin-top: 0;
+    color: hsl(187, 24%, 22%);
+    font-weight: 700;
+}
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.labeltitle {
+    display: block;
+    padding-bottom: 8px;
+    color: hsl(187, 24%, 22%);
+}
+
+.field-text {
+    font-family: "Karla";
+    color: hsl(187, 24%, 22%);
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.obligatory-field{
+    color: hsl(169, 82%, 27%)
+}
+
+.textmessage {
+    color: hsl(187, 24%, 22%);
+    font-size: 16px;
+}
+
+input[type="radio" i] {
+    margin: 0 10px;
+}
+
+.ajust-query {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.field-border {
+    border-radius: 6px;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 16px;
+    margin: auto;
+}
+
+
+.name {
+    display: flex;
+    gap: 16px;
+
+}
+
+.name div {
+    flex-grow: 1;
+}
+
+.error {
+    display: block;
+    color: hsl(0, 66%, 54%);
+    padding-top: 8px;
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 8px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.styleconsent {
+    color: hsl(187, 24%, 22%);
+    padding: 12px 0;
+}
+
+.btnsubmit {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border: 0;
+    height: 40px;
+}
