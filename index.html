@@ -12,66 +12,73 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <script src="script.js" type="text/javascript"></script>
-
   <title>Contact form</title>
-
-
 </head>
 
 <body>
+  <div class="alert"> 
+    <div class="alert-title">
+      <img src="check.png">
+      Message Sent!
+    </div>
+    <div class="alert-message">
+      Thanks for completing the form. We'll be in touch soon!
+    </div>
+  </div>
   <div class="container">
     <div class="card">
       <h1>Contact Us</h1>
-      <form action="" id="contactform">
+      <form action="" id="contact-form">
         <div class="name">
           <div>
-            <label class="labeltitle" for="fname">First Name <span class="obligatory-field">*</span></label>
-            <input class="field-text field-border" type="text" id="fname">
-            <span class="error" id="errofname">This field is required</span>
+            <label class="label-title" for="first-name-input">First Name <span class="obligatory-field">*</span></label>
+            <input class="field-text field-border" type="text" id="first-name-input" name="first-name">
+            <span class="error" id="first-name-error">This field is required</span>
           </div>
 
           <div>
-            <label class="labeltitle" for="lname">Last Name <span class="obligatory-field">*</span></label>
-            <input class="field-text field-border" type="text" id="lname">
-            <span class="error" id="errolname">This field is required</span>
+            <label class="label-title" for="last-name-input">Last Name <span class="obligatory-field">*</span></label>
+            <input class="field-text field-border" type="text" id="last-name-input" name="last-name">
+            <span class="error" id="last-name-error">This field is required</span>
           </div>
         </div>
 
         <div>
-          <label class="labeltitle" for="email">Email Address <span class="obligatory-field">*</span></label>
-          <input class="field-text field-border" type="email" id="email" placeholder="email@example.com">
-          <span class="error" id="erroemail">Please enter a valid email address</span>
+          <label class="label-title" for="email-input">Email Address <span class="obligatory-field">*</span></label>
+          <input class="field-text field-border" type="email" id="email-input" placeholder="email@example.com" name="email">
+          <span class="error" id="email-error">Please enter a valid email address</span>
         </div>
 
         <div>
-          <label class="labeltitle">Query Type <span class="obligatory-field">*</span></label>
+          <label class="label-title">Query Type <span class="obligatory-field">*</span></label>
           <div class="ajust-query">
             <div class="field-text field-border">
-              <input type="radio" name="rquerytype" value="radgeneral" id="radgeneral"> 
-              <label for="radgeneral">General Enquiry</label>
+              <input type="radio" name="query-type" value="General Enquiry" id="general"> 
+              <label for="general">General Enquiry</label>
             </div>
             <div class="field-text field-border">  
-              <input type="radio" name="rquerytype" value="radsupport" id="radsupport">
-              <label for="radsupport">Support Request</label>
+              <input type="radio" name="query-type" value="Support Request" id="support">
+              <label for="support">Support Request</label>
             </div>
           </div>
-          <span class="error" id="erroquerytype">Please select a query type</span>
+          <span class="error" id="query-type-error">Please select a query type</span>
         </div>
 
         <div>
-          <label class="labeltitle" for="message">Message <span class="obligatory-field">*</span></label>
+          <label class="label-title" for="message">Message <span class="obligatory-field">*</span></label>
           <textarea class="field-text field-border" name="message" id="message" rows="6" cols="70" style="resize: none"></textarea>
-          <span class="error" id="erromessage">This field is required</span>
+          <span class="error" id="message-error">This field is required</span>
         </div>
 
-        <div class="styleconsent">
-          <input type="checkbox" name="consent" id="consent" value="consent"> 
-          <span>I consent to being contacted by the team <span class="obligatory-field">*</span></span>
-          <span class="error" id="errocheck">To submit this form, please consent to being contacted</span>
+        <div class="style-consent">
+          <label>
+            <input type="checkbox" name="consent" id="consent" value="Consent Contact"> 
+            <span>I consent to being contacted by the team <span class="obligatory-field">*</span></span>
+          </label>
+          <span class="error" id="consent-error">To submit this form, please consent to being contacted</span>
         </div>
 
-        <button type="submit" value="submit" class="btnsubmit">Submit</button>
+        <button type="submit" value="submit" class="submit-button" id="submit-button">Submit</button>
 
       </form>
     </div>
@@ -81,6 +88,8 @@
     </div>
 
   </div>
+
+  <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>

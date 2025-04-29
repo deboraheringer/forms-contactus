@@ -24,7 +24,11 @@ form {
     gap: 16px;
 }
 
-.labeltitle {
+img {
+    vertical-align: bottom;
+}
+
+.label-title {
     display: block;
     padding-bottom: 8px;
     color: hsl(187, 24%, 22%);
@@ -38,11 +42,11 @@ form {
     font-size: 16px;
 }
 
-.obligatory-field{
+.obligatory-field {
     color: hsl(169, 82%, 27%)
 }
 
-.textmessage {
+.text-message {
     color: hsl(187, 24%, 22%);
     font-size: 16px;
 }
@@ -80,7 +84,6 @@ input[type="radio" i] {
     margin: auto;
 }
 
-
 .name {
     display: flex;
     gap: 16px;
@@ -95,7 +98,7 @@ input[type="radio" i] {
     display: block;
     color: hsl(0, 66%, 54%);
     padding-top: 8px;
-    display: none;
+    display: none; 
 }
 
 .attribution {
@@ -108,15 +111,39 @@ input[type="radio" i] {
     color: hsl(228, 45%, 44%);
 }
 
-.styleconsent {
+.style-consent {
     color: hsl(187, 24%, 22%);
     padding: 12px 0;
 }
 
-.btnsubmit {
+.submit-button {
     background-color: hsl(169, 82%, 27%);
     color: hsl(0, 0%, 100%);
     border-radius: 8px;
     border: 0;
     height: 40px;
+}
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-title {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.alert-message {
+    font-size: small;
 }
