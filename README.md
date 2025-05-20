@@ -1,10 +1,10 @@
 # 📬 Contact Us Form
-This project is a simple and responsive Contact Us form designed to collect user information and queries effectively.
+This project is a simple Contact Us form designed to collect user information and queries effectively.
 
 ## 📝 Features
 Collects user First Name, Last Name, Email Address
 
-Dropdown for selecting Query Type (General Enquiry / Support Request)
+Radio buttons for selecting Query Type (General Enquiry / Support Request).
 
 Required Message field
 
